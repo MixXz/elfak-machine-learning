@@ -13,6 +13,8 @@ SVM Classification Report:
 weighted avg       0.86      0.85      0.84       305
 
 Best hyperparameters: {}
+Cross-Validation Scores: [0.82377049 0.83539095 0.8436214  0.85596708 0.83539095]
+Mean Cross-Validation Score: 0.8388281724347297
 
 ==================================================
 Training and evaluating RandomForest...
@@ -29,7 +31,9 @@ RandomForest Classification Report:
    macro avg       0.94      0.92      0.93       305
 weighted avg       0.94      0.94      0.94       305
 
-Best hyperparameters: {'classifier__max_depth': 20, 'classifier__n_estimators': 100}
+Best hyperparameters: {'classifier__max_depth': None, 'classifier__n_estimators': 200}
+Cross-Validation Scores: [0.91803279 0.9382716  0.95061728 0.97119342 0.92592593]
+Mean Cross-Validation Score: 0.9408082034675841
 
 ==================================================
 Training and evaluating LogisticRegression...
@@ -47,23 +51,27 @@ LogisticRegression Classification Report:
 weighted avg       0.82      0.82      0.82       305
 
 Best hyperparameters: {}
+Cross-Validation Scores: [0.80327869 0.81069959 0.81893004 0.83127572 0.79423868]
+Mean Cross-Validation Score: 0.8116845442892802
 
 ==================================================
 Training and evaluating GradientBoosting...
 GradientBoosting Confusion Matrix:
-[[ 95  12]
- [  6 192]]
+[[ 92  15]
+ [  7 191]]
 GradientBoosting Classification Report:
               precision    recall  f1-score   support
 
-           0       0.94      0.89      0.91       107
-           1       0.94      0.97      0.96       198
+           0       0.93      0.86      0.89       107
+           1       0.93      0.96      0.95       198
 
-    accuracy                           0.94       305
-   macro avg       0.94      0.93      0.93       305
-weighted avg       0.94      0.94      0.94       305
+    accuracy                           0.93       305
+   macro avg       0.93      0.91      0.92       305
+weighted avg       0.93      0.93      0.93       305
 
-Best hyperparameters: {'classifier__learning_rate': 0.1, 'classifier__max_depth': 7, 'classifier__n_estimators': 200}
+Best hyperparameters: {'classifier__learning_rate': 0.2, 'classifier__n_estimators': 200}
+Cross-Validation Scores: [0.91393443 0.9218107  0.95061728 0.93415638 0.9218107 ]
+Mean Cross-Validation Score: 0.9284658975915805
 
 ==================================================
 Training and evaluating KNeighbors...
@@ -81,23 +89,27 @@ KNeighbors Classification Report:
 weighted avg       0.93      0.92      0.92       305
 
 Best hyperparameters: {}
+Cross-Validation Scores: [0.89344262 0.90946502 0.90946502 0.94650206 0.93415638]
+Mean Cross-Validation Score: 0.9186062200634149
 
 ==================================================
 Training and evaluating DecisionTree...
 DecisionTree Confusion Matrix:
-[[ 93  14]
- [ 13 185]]
+[[ 92  15]
+ [ 10 188]]
 DecisionTree Classification Report:
               precision    recall  f1-score   support
 
-           0       0.88      0.87      0.87       107
-           1       0.93      0.93      0.93       198
+           0       0.90      0.86      0.88       107
+           1       0.93      0.95      0.94       198
 
-    accuracy                           0.91       305
-   macro avg       0.90      0.90      0.90       305
-weighted avg       0.91      0.91      0.91       305
+    accuracy                           0.92       305
+   macro avg       0.91      0.90      0.91       305
+weighted avg       0.92      0.92      0.92       305
 
-Best hyperparameters: {'classifier__criterion': 'gini', 'classifier__max_depth': None}
+Best hyperparameters: {'classifier__criterion': 'entropy', 'classifier__max_depth': None}
+Cross-Validation Scores: [0.8647541  0.88888889 0.93415638 0.93415638 0.92592593]
+Mean Cross-Validation Score: 0.9095763340754232
 
 ==================================================
 Training and evaluating NaiveBayes...
@@ -115,6 +127,8 @@ NaiveBayes Classification Report:
 weighted avg       0.82      0.83      0.82       305
 
 Best hyperparameters: {}
+Cross-Validation Scores: [0.82377049 0.82716049 0.85596708 0.86419753 0.79423868]
+Mean Cross-Validation Score: 0.8330668555623019
 
 ==================================================
 Training and evaluating AdaBoost...
@@ -132,39 +146,45 @@ AdaBoost Classification Report:
 weighted avg       0.90      0.90      0.90       305
 
 Best hyperparameters: {}
+Cross-Validation Scores: [0.87704918 0.88065844 0.90946502 0.90946502 0.87242798]
+Mean Cross-Validation Score: 0.8898131282466437
 
 ==================================================
 Training and evaluating ExtraTrees...
 ExtraTrees Confusion Matrix:
 [[ 97  10]
- [  5 193]]
+ [  6 192]]
 ExtraTrees Classification Report:
               precision    recall  f1-score   support
 
-           0       0.95      0.91      0.93       107
+           0       0.94      0.91      0.92       107
            1       0.95      0.97      0.96       198
 
     accuracy                           0.95       305
-   macro avg       0.95      0.94      0.95       305
+   macro avg       0.95      0.94      0.94       305
 weighted avg       0.95      0.95      0.95       305
 
-Best hyperparameters: {'classifier__max_depth': None, 'classifier__n_estimators': 50}
+Best hyperparameters: {'classifier__max_depth': None, 'classifier__n_estimators': 100}
+Cross-Validation Scores: [0.93032787 0.95061728 0.96296296 0.96707819 0.94238683]
+Mean Cross-Validation Score: 0.9506746272684342
 
 ==================================================
 Training and evaluating Bagging...
 Bagging Confusion Matrix:
-[[ 95  12]
- [  8 190]]
+[[ 97  10]
+ [ 10 188]]
 Bagging Classification Report:
               precision    recall  f1-score   support
 
-           0       0.92      0.89      0.90       107
-           1       0.94      0.96      0.95       198
+           0       0.91      0.91      0.91       107
+           1       0.95      0.95      0.95       198
 
     accuracy                           0.93       305
-   macro avg       0.93      0.92      0.93       305
+   macro avg       0.93      0.93      0.93       305
 weighted avg       0.93      0.93      0.93       305
 
 Best hyperparameters: {}
+Cross-Validation Scores: [0.9057377  0.9218107  0.93004115 0.94650206 0.9218107 ]
+Mean Cross-Validation Score: 0.9251804627943061
 
 ==================================================
