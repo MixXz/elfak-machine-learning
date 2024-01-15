@@ -1,180 +1,18 @@
 Training and evaluating SVM...
-SVM Test Set Accuracy: 0.8350
 SVM Confusion Matrix:
-[[ 78  39]
- [ 12 180]]
+[[ 96  27]
+ [  7 104]]
 SVM Classification Report:
               precision    recall  f1-score   support
 
-           0       0.87      0.67      0.75       117
-           1       0.82      0.94      0.88       192
+           0       0.93      0.78      0.85       123
+           1       0.79      0.94      0.86       111
 
-    accuracy                           0.83       309
-   macro avg       0.84      0.80      0.81       309
-weighted avg       0.84      0.83      0.83       309
+    accuracy                           0.85       234
+   macro avg       0.86      0.86      0.85       234
+weighted avg       0.87      0.85      0.85       234
 
 Best hyperparameters: {}
 
 ==================================================
 Training and evaluating RandomForest...
-RandomForest Test Set Accuracy: 0.9515
-RandomForest Confusion Matrix:
-[[110   7]
- [  8 184]]
-RandomForest Classification Report:
-              precision    recall  f1-score   support
-
-           0       0.93      0.94      0.94       117
-           1       0.96      0.96      0.96       192
-
-    accuracy                           0.95       309
-   macro avg       0.95      0.95      0.95       309
-weighted avg       0.95      0.95      0.95       309
-
-Best hyperparameters: {'classifier__max_depth': None, 'classifier__n_estimators': 50}
-
-==================================================
-Training and evaluating LogisticRegression...
-LogisticRegression Test Set Accuracy: 0.8188
-LogisticRegression Confusion Matrix:
-[[ 80  37]
- [ 19 173]]
-LogisticRegression Classification Report:
-              precision    recall  f1-score   support
-
-           0       0.81      0.68      0.74       117
-           1       0.82      0.90      0.86       192
-
-    accuracy                           0.82       309
-   macro avg       0.82      0.79      0.80       309
-weighted avg       0.82      0.82      0.82       309
-
-Best hyperparameters: {}
-
-==================================================
-Training and evaluating GradientBoosting...
-GradientBoosting Test Set Accuracy: 0.9385
-GradientBoosting Confusion Matrix:
-[[107  10]
- [  9 183]]
-GradientBoosting Classification Report:
-              precision    recall  f1-score   support
-
-           0       0.92      0.91      0.92       117
-           1       0.95      0.95      0.95       192
-
-    accuracy                           0.94       309
-   macro avg       0.94      0.93      0.93       309
-weighted avg       0.94      0.94      0.94       309
-
-Best hyperparameters: {'classifier__learning_rate': 0.1, 'classifier__max_depth': 7, 'classifier__n_estimators': 50}
-
-==================================================
-Training and evaluating KNeighbors...
-KNeighbors Test Set Accuracy: 0.9288
-KNeighbors Confusion Matrix:
-[[103  14]
- [  8 184]]
-KNeighbors Classification Report:
-              precision    recall  f1-score   support
-
-           0       0.93      0.88      0.90       117
-           1       0.93      0.96      0.94       192
-
-    accuracy                           0.93       309
-   macro avg       0.93      0.92      0.92       309
-weighted avg       0.93      0.93      0.93       309
-
-Best hyperparameters: {}
-
-==================================================
-Training and evaluating DecisionTree...
-DecisionTree Test Set Accuracy: 0.8964
-DecisionTree Confusion Matrix:
-[[ 99  18]
- [ 14 178]]
-DecisionTree Classification Report:
-              precision    recall  f1-score   support
-
-           0       0.88      0.85      0.86       117
-           1       0.91      0.93      0.92       192
-
-    accuracy                           0.90       309
-   macro avg       0.89      0.89      0.89       309
-weighted avg       0.90      0.90      0.90       309
-
-Best hyperparameters: {'classifier__criterion': 'entropy', 'classifier__max_depth': 10}
-
-==================================================
-Training and evaluating NaiveBayes...
-NaiveBayes Test Set Accuracy: 0.8285
-NaiveBayes Confusion Matrix:
-[[ 84  33]
- [ 20 172]]
-NaiveBayes Classification Report:
-              precision    recall  f1-score   support
-
-           0       0.81      0.72      0.76       117
-           1       0.84      0.90      0.87       192
-
-    accuracy                           0.83       309
-   macro avg       0.82      0.81      0.81       309
-weighted avg       0.83      0.83      0.83       309
-
-Best hyperparameters: {}
-
-==================================================
-Training and evaluating AdaBoost...
-AdaBoost Test Set Accuracy: 0.8835
-AdaBoost Confusion Matrix:
-[[ 93  24]
- [ 12 180]]
-AdaBoost Classification Report:
-              precision    recall  f1-score   support
-
-           0       0.89      0.79      0.84       117
-           1       0.88      0.94      0.91       192
-
-    accuracy                           0.88       309
-   macro avg       0.88      0.87      0.87       309
-weighted avg       0.88      0.88      0.88       309
-
-Best hyperparameters: {}
-
-==================================================
-Training and evaluating ExtraTrees...
-ExtraTrees Test Set Accuracy: 0.9547
-ExtraTrees Confusion Matrix:
-[[111   6]
- [  8 184]]
-ExtraTrees Classification Report:
-              precision    recall  f1-score   support
-
-           0       0.93      0.95      0.94       117
-           1       0.97      0.96      0.96       192
-
-    accuracy                           0.95       309
-   macro avg       0.95      0.95      0.95       309
-weighted avg       0.95      0.95      0.95       309
-
-Best hyperparameters: {'classifier__max_depth': None, 'classifier__n_estimators': 100}
-
-==================================================
-Training and evaluating Bagging...
-Bagging Test Set Accuracy: 0.9288
-Bagging Confusion Matrix:
-[[105  12]
- [ 10 182]]
-Bagging Classification Report:
-              precision    recall  f1-score   support
-
-           0       0.91      0.90      0.91       117
-           1       0.94      0.95      0.94       192
-
-    accuracy                           0.93       309
-   macro avg       0.93      0.92      0.92       309
-weighted avg       0.93      0.93      0.93       309
-
-Best hyperparameters: {}
-
-==================================================
