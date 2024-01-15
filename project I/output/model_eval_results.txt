@@ -1,18 +1,170 @@
 Training and evaluating SVM...
 SVM Confusion Matrix:
-[[ 96  27]
- [  7 104]]
+[[ 69  38]
+ [  8 190]]
 SVM Classification Report:
               precision    recall  f1-score   support
 
-           0       0.93      0.78      0.85       123
-           1       0.79      0.94      0.86       111
+           0       0.90      0.64      0.75       107
+           1       0.83      0.96      0.89       198
 
-    accuracy                           0.85       234
-   macro avg       0.86      0.86      0.85       234
-weighted avg       0.87      0.85      0.85       234
+    accuracy                           0.85       305
+   macro avg       0.86      0.80      0.82       305
+weighted avg       0.86      0.85      0.84       305
 
 Best hyperparameters: {}
 
 ==================================================
 Training and evaluating RandomForest...
+RandomForest Confusion Matrix:
+[[ 94  13]
+ [  6 192]]
+RandomForest Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.94      0.88      0.91       107
+           1       0.94      0.97      0.95       198
+
+    accuracy                           0.94       305
+   macro avg       0.94      0.92      0.93       305
+weighted avg       0.94      0.94      0.94       305
+
+Best hyperparameters: {'classifier__max_depth': 20, 'classifier__n_estimators': 100}
+
+==================================================
+Training and evaluating LogisticRegression...
+LogisticRegression Confusion Matrix:
+[[ 70  37]
+ [ 17 181]]
+LogisticRegression Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.80      0.65      0.72       107
+           1       0.83      0.91      0.87       198
+
+    accuracy                           0.82       305
+   macro avg       0.82      0.78      0.80       305
+weighted avg       0.82      0.82      0.82       305
+
+Best hyperparameters: {}
+
+==================================================
+Training and evaluating GradientBoosting...
+GradientBoosting Confusion Matrix:
+[[ 95  12]
+ [  6 192]]
+GradientBoosting Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.94      0.89      0.91       107
+           1       0.94      0.97      0.96       198
+
+    accuracy                           0.94       305
+   macro avg       0.94      0.93      0.93       305
+weighted avg       0.94      0.94      0.94       305
+
+Best hyperparameters: {'classifier__learning_rate': 0.1, 'classifier__max_depth': 7, 'classifier__n_estimators': 200}
+
+==================================================
+Training and evaluating KNeighbors...
+KNeighbors Confusion Matrix:
+[[ 89  18]
+ [  5 193]]
+KNeighbors Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.95      0.83      0.89       107
+           1       0.91      0.97      0.94       198
+
+    accuracy                           0.92       305
+   macro avg       0.93      0.90      0.91       305
+weighted avg       0.93      0.92      0.92       305
+
+Best hyperparameters: {}
+
+==================================================
+Training and evaluating DecisionTree...
+DecisionTree Confusion Matrix:
+[[ 93  14]
+ [ 13 185]]
+DecisionTree Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.88      0.87      0.87       107
+           1       0.93      0.93      0.93       198
+
+    accuracy                           0.91       305
+   macro avg       0.90      0.90      0.90       305
+weighted avg       0.91      0.91      0.91       305
+
+Best hyperparameters: {'classifier__criterion': 'gini', 'classifier__max_depth': None}
+
+==================================================
+Training and evaluating NaiveBayes...
+NaiveBayes Confusion Matrix:
+[[ 75  32]
+ [ 21 177]]
+NaiveBayes Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.78      0.70      0.74       107
+           1       0.85      0.89      0.87       198
+
+    accuracy                           0.83       305
+   macro avg       0.81      0.80      0.80       305
+weighted avg       0.82      0.83      0.82       305
+
+Best hyperparameters: {}
+
+==================================================
+Training and evaluating AdaBoost...
+AdaBoost Confusion Matrix:
+[[ 84  23]
+ [  8 190]]
+AdaBoost Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.91      0.79      0.84       107
+           1       0.89      0.96      0.92       198
+
+    accuracy                           0.90       305
+   macro avg       0.90      0.87      0.88       305
+weighted avg       0.90      0.90      0.90       305
+
+Best hyperparameters: {}
+
+==================================================
+Training and evaluating ExtraTrees...
+ExtraTrees Confusion Matrix:
+[[ 97  10]
+ [  5 193]]
+ExtraTrees Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.95      0.91      0.93       107
+           1       0.95      0.97      0.96       198
+
+    accuracy                           0.95       305
+   macro avg       0.95      0.94      0.95       305
+weighted avg       0.95      0.95      0.95       305
+
+Best hyperparameters: {'classifier__max_depth': None, 'classifier__n_estimators': 50}
+
+==================================================
+Training and evaluating Bagging...
+Bagging Confusion Matrix:
+[[ 95  12]
+ [  8 190]]
+Bagging Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.92      0.89      0.90       107
+           1       0.94      0.96      0.95       198
+
+    accuracy                           0.93       305
+   macro avg       0.93      0.92      0.93       305
+weighted avg       0.93      0.93      0.93       305
+
+Best hyperparameters: {}
+
+==================================================
